@@ -202,5 +202,30 @@ backdrop-filter: blur(8px);
   .bluey {
     color: #72d1ee;
     }
+/*--------------------------------le bouton back to top ------------------------------*/
 
+#myBtn {
+  position: fixed;
+  bottom: 10px;
+  right: 10px; 
+  max-width: 40px;
+  width: 100%;
+  font-size: 12px;
+  border: 1px solid rgba(85, 85, 85, 0.2);
+  background-color: rgb(100,100,100);
+  padding: 10px;
+  margin:10px;
+  border-radius: 4px;
+  z-index: 1000; /* Ensure it's above other elements */
+}
+
+/* On Hover Color Change */
+#myBtn:hover {
+  background-color: #7dbbf1;
+}  
+
+#myBtn a {
+  color: white;
+  text-decoration: none;
+} 
 /*--------------------------------------------------------------
