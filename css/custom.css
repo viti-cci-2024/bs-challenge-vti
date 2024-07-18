@@ -1,0 +1,202 @@
+/* ---------------- SIDEBAR CSS -------------------------------------------------- */
+.side-navbar {
+  width: 180px;
+  height: 100%;
+  position: absolute;
+  margin-left: -300px;
+  background-color: #3a3a3a;
+  transition: 0.4s;
+  height: 850px;
+}
+
+/* Supprime soulignement des liens */
+.side-navbar .nav-link a {
+  text-decoration: none;
+}
+
+/* Classe pour afficher la sidebar */
+.active-nav {
+  margin-left: 0;
+}
+
+.my-container {
+  transition: 0.4s;
+}
+
+/* Ajustement pour le conteneur principal */
+.active-cont {
+  margin-left: 180px;
+}
+
+/* Autres styles */
+.nav-link:active,
+.nav-link:focus,
+.nav-link:hover {
+  background-color: #ffffff26;
+}
+
+/* ---------------- FIN SIDEBAR CSS -------------------------------------------------- */
+
+.vertical-center {
+  min-height: 100%;
+  /* Garantit que la div occupe au moins 100% de la hauteur de la fenêtre */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Centre verticalement */
+  text-align: center;
+  /* Centre horizontalement */
+}
+
+.vertical-center-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Centre verticalement */
+  text-align: center;
+  /* Centre horizontalement */
+  margin-top: 10%;
+}
+
+.btn.carre {
+  border-radius: 0;
+}
+
+#bars {
+  background-color: none;
+  color: #000000;
+}
+
+#home {
+  background-image: url('../img/bg_header.jpg');
+  background-size: cover;
+  /* Assure que l'image couvre toute la surface de la div */
+  background-position: center;
+  /* Centre l'image de fond */
+  height: 850px;
+}
+
+.my-container input {
+  border-radius: 2rem;
+  padding: 2px 20px;
+}
+
+@font-face {
+  font-family: 'open-serif-bold';
+  src: url('../font/OpenSerif-Bold.woff2');
+  /* chemin relatif vers le fichier de police */
+}
+
+h1 {
+  font-family: 'open-serif-bold', sans-serif;
+  /* Utilisation de la police personnalisée avec une police de secours */
+  color: #ffffff;
+  /* Couleur du texte (exemple) */
+}
+
+h1.big {
+  font-size: 4rem;
+  /* Exemple de taille de police */
+}
+
+/*--------------------------------      FEATURES  CSS   ---------------------------------------------------------*/
+.features {
+  background-color: rgb(155, 153, 153);
+  height: 400px;
+}
+
+/*--------------------------------      ABOUT  CSS   ---------------------------------------------------------*/
+.about {
+  background-image: url("../img/bg_nuage.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+
+@font-face {
+  font-family: "typicons";
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/typicons/2.1.2/typicons.woff") format("woff");
+}
+
+.icon-lrg {
+  font-size: 4em;
+}
+
+/*--------------------------------Blog css   ---------------------------------------------------------*/
+.blog {
+  background-color: rgb(255, 255, 255);
+  height: auto;
+}
+
+
+/*--------------------------------History css   ---------------------------------------------------------*/
+.history {
+  background-image: url("../img/bg_appareil_photo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+}
+
+
+/*--------------------------------Partenaires css   ---------------------------------------------------------*/
+.clients {
+  padding: 20px 0;
+}
+
+.clients .client-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.clients .client-logo img {
+  padding: 20px 40px;
+  max-width: 90%;
+  transition: 0.3s;
+  opacity: 0.5;
+  filter: grayscale(100);
+}
+
+.clients .client-logo img:hover {
+  filter: none;
+  opacity: 1;
+}
+
+@media (max-width: 640px) {
+  .clients .client-logo img {
+    padding: 20px;
+  }
+}
+/*--------------------------------contact css   ---------------------------------------------------------*/
+.contacteuh {
+background-image: url("../img/bg_newsletter.jpg");
+background-position: top;
+background-repeat: no-repeat;
+height: auto;
+}
+
+.contacteuh::before {
+content: "";
+position: relative;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.3); /* Ajuste l'opacité pour obtenir la noirceur désirée */
+z-index: 1; /* S'assure que ce pseudo-élément est derrière le contenu réel */
+}
+
+.contacteuh-content {
+position: relative;
+z-index: 2; /* S'assure que le contenu réel est au-dessus de l'assombrissement */
+backdrop-filter: blur(8px);
+}
+
+.white {
+  color: #ffffff;
+  }
+
+/*--------------------------------------------------------------
